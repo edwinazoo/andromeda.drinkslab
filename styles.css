@@ -250,6 +250,7 @@
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:24px;
+    align-items:start;
   }
   @media (max-width:900px){ .plans{ grid-template-columns:1fr; } }
   .plan{
@@ -292,7 +293,96 @@
     content:"◆"; position:absolute; left:0; top:1px;
     color:var(--acid); font-size:0.65rem;
   }
-  .plan .btn{ text-align:center; width:100%; }
+  .plan .btn{ text-align:center; width:100%; margin-top:16px; }
+
+  /* ---------- CARTA DE TRAGOS (acordeón) ---------- */
+  .menu-toggle{
+    display:flex; align-items:center; justify-content:space-between;
+    width:100%;
+    background:none;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 16px;
+    color:var(--cyan);
+    font-family:'Sora'; font-size:0.82rem; font-weight:600;
+    letter-spacing:0.3px;
+    cursor:pointer;
+    transition:border-color .25s ease, background .25s ease, color .25s ease;
+  }
+  .menu-toggle:hover{
+    border-color:var(--cyan);
+    background:rgba(0,246,255,0.06);
+  }
+  .plan.featured .menu-toggle{ color:var(--magenta); }
+  .plan.featured .menu-toggle:hover{
+    border-color:var(--magenta);
+    background:rgba(255,46,154,0.06);
+  }
+  .menu-chevron{
+    flex-shrink:0;
+    transition:transform .3s ease;
+  }
+  .menu-toggle[aria-expanded="true"] .menu-chevron{
+    transform:rotate(180deg);
+  }
+
+  .plan-menu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+  }
+  .plan-menu-inner{
+    padding:18px 4px 4px;
+  }
+  .plan-menu-label{
+    display:inline-block;
+    font-family:'Sora'; font-size:0.68rem; font-weight:700;
+    letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--acid);
+    margin-bottom:14px;
+  }
+  .plan.featured .plan-menu-label{ color:var(--magenta); }
+
+  .drink-list{
+    list-style:none;
+    display:flex; flex-direction:column;
+    gap:12px;
+  }
+  .drink-list li{
+    display:flex; flex-direction:column;
+    padding-left:18px;
+    position:relative;
+    opacity:0;
+    transform:translateY(-6px);
+    animation:drinkIn .35s ease forwards;
+  }
+  .plan-menu.open .drink-list li{ animation-play-state:running; }
+  .drink-list li::before{
+    content:"✦";
+    position:absolute; left:0; top:1px;
+    color:var(--cyan); font-size:0.65rem;
+  }
+  .plan.featured .drink-list li::before{ color:var(--magenta); }
+  .drink-list li:nth-child(1){ animation-delay:.03s; }
+  .drink-list li:nth-child(2){ animation-delay:.08s; }
+  .drink-list li:nth-child(3){ animation-delay:.13s; }
+  .drink-list li:nth-child(4){ animation-delay:.18s; }
+  .drink-list li:nth-child(5){ animation-delay:.23s; }
+  .drink-list li:nth-child(6){ animation-delay:.28s; }
+  .drink-list li:nth-child(7){ animation-delay:.33s; }
+  @keyframes drinkIn{
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .drink-name{
+    font-size:0.9rem; font-weight:600; color:var(--text);
+  }
+  .drink-note{
+    font-size:0.78rem; color:var(--text-dim); margin-top:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .plan-menu, .menu-chevron, .drink-list li{ transition:none !important; animation:none !important; opacity:1 !important; transform:none !important; }
+  }
 
   /* ---------- PROCESO ---------- */
   .steps{
