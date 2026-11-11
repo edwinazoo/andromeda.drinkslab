@@ -70,7 +70,7 @@
     max-width:1180px; margin:0 auto;
   }
   .brand{ display:flex; align-items:center; gap:10px; }
-  .brand svg{ width:34px; height:34px; }
+  .brand img{ width:34px; height:34px; flex-shrink:0; }
   .brand-word{ font-family:'Michroma'; font-size:0.78rem; letter-spacing:2px; color:var(--cyan); }
   .brand-word span{ display:inline; font:inherit; color:var(--magenta); margin-left:8px; }
   .nav-links{ display:flex; align-items:center; gap:32px; font-size:0.85rem; letter-spacing:0.5px; color:var(--text-dim); }
@@ -135,6 +135,7 @@
   .hero-icon-wrap{
     position:relative;
     display:flex; align-items:center; justify-content:center;
+    height:230px;
   }
   .orbit-ring{
     position:absolute;
@@ -150,16 +151,11 @@
     animation-direction:reverse;
   }
   @keyframes spin{ to{ transform:rotate(360deg); } }
-  .hero-icon-wrap svg{
-    width:230px; height:auto;
-    filter:drop-shadow(0 0 22px rgba(0,246,255,0.45));
-    visibility:hidden;
-  }
   .hero-logo{
     position:absolute;
-    width:400px; height:auto;
-    filter:drop-shadow(0 0 18px rgba(0,246,255,0.45));
+    width:min(330px, 100%); height:auto;
     z-index:1;
+    filter:drop-shadow(0 0 22px rgba(0,246,255,0.35));
   }
   .eyebrow{
     font-family:'Sora'; font-size:0.75rem; letter-spacing:4px;
@@ -370,6 +366,7 @@
   .drink-list li:nth-child(5){ animation-delay:.23s; }
   .drink-list li:nth-child(6){ animation-delay:.28s; }
   .drink-list li:nth-child(7){ animation-delay:.33s; }
+  .drink-list li:nth-child(8){ animation-delay:.38s; }
   @keyframes drinkIn{
     to{ opacity:1; transform:translateY(0); }
   }
@@ -414,6 +411,7 @@
     max-width:760px; margin:0 auto 26px;
   }
   .final-cta p{ color:var(--text-dim); max-width:520px; margin:0 auto 36px; }
+  .final-cta .cta-row{ justify-content:center; margin-top:0; }
 
   footer{
     border-top:1px solid var(--line);
@@ -432,4 +430,18 @@
 
   @media (prefers-reduced-motion: reduce){
     .orbit-ring, .stars span{ animation:none !important; }
+  }
+
+
+  /* ---------- GALERÍA (se activa al descomentar la sección en index.html) ---------- */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:16px;
+  }
+  .gallery img{
+    width:100%; height:100%;
+    aspect-ratio:4/3; object-fit:cover;
+    border:1px solid var(--line);
+    border-radius:16px;
   }
