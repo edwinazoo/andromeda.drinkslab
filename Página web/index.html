@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andromeda Drinks Lab - Barra de eventos</title>
+<meta name="description" content="Barra de tragos profesional para eventos. Cotización a medida y atención personalizada para casamientos, cumpleaños y eventos corporativos">
+<link rel="icon" type="image/svg+xml" href="andromeda-icono-color.svg">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta name="theme-color" content="#0D0221">
+<!-- IMPORTANTE: reemplazá https://TU-DOMINIO.com por la dirección real de tu página (og:image y og:url necesitan URL absoluta) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Andromeda Drinks Lab">
+<meta property="og:title" content="Andromeda Drinks Lab · Barra de tragos para eventos">
+<meta property="og:description" content="Cócteles de calidad premium para casamientos, cumpleaños y eventos corporativos. Armamos tu propuesta a medida.">
+<meta property="og:url" content="https://TU-DOMINIO.com/">
+<meta property="og:image" content="https://TU-DOMINIO.com/logo.png">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="2000">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sora:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="andromeda-icono-color.svg" alt="" width="34" height="34">
+      <div class="brand-word">ANDROMEDA<span>DRINKS LAB</span></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#proposito">Nosotros</a>
+      <a href="#planes">Fórmulas</a>
+      <a href="#proceso">Cotizar un evento</a>
+      <a href="https://wa.me/5491149477907?text=Hola%21%20Quiero%20cotizar%20un%20evento%20con%20Andromeda%20Drinks%20Lab." target="_blank" rel="noopener noreferrer" class="nav-cta">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-icon-wrap">
+        <div class="orbit-ring" aria-hidden="true"></div>
+        <div class="orbit-ring two" aria-hidden="true"></div>
+        
+        <img class="hero-logo" src="andromeda-icono-color.svg" alt="Logo de Andromeda Drinks Lab" width="400" height="400">
+      </div>
+      <div>
+        <span class="eyebrow">Barra para eventos &middot; M31</span>
+        <h1>Cócteles bajados de otra galaxia <em>directo a tu paladar</em></h1>
+        <p class="lead">Somos la barra que se ocupa de que todos la pasen increíble, con una experiencia de lujo a tu alcance. Cumpleaños, casamientos, reuniones y todo tipo de eventos, servidos con una calidad que parece de otro planeta.</p>
+        <div class="cta-row">
+          <a href="#contacto" class="btn btn-primary">Reservar tu evento</a>
+          <a href="#planes" class="btn btn-ghost">Ver fórmulas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proposito">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">El laboratorio</span>
+        <h2>Calidad premium al alcance de todos</h2>
+        <p>Andromeda Drinks Lab nació de una idea simple: brindar una experiencia de lujo para todo tipo de eventos. Somos una opción asequible y 100% personalizable, con una transparencia que nos distingue. Queremos que cada cliente se sienta cómodo y seguro, por eso nos enfocamos en cada detalle para que tu evento salga mejor de lo que te esperas.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3><span class="value-dot"></span>Calidez humana</h3>
+          <p>Atendemos cada evento en persona, no como un número más de la agenda.</p>
+        </div>
+        <div class="value-card">
+          <h3><span class="value-dot"></span>Honestidad transparente</h3>
+          <p>Lo que se cotiza es lo que se sirve, sin letra chica ni sorpresas.</p>
+        </div>
+        <div class="value-card">
+          <h3><span class="value-dot"></span>Accesibilidad con estilo</h3>
+          <p>Experiencia premium, pensada para caber en presupuestos reales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Elegí tu fórmula</span>
+        <h2>Tres fórmulas, un mismo objetivo</h2>
+        <p>Cada evento es distinto, por eso armamos tres planes distintos, estos son modelos y solo están para orientarte, podés cambiarlos a tu gusto y adaptar cada detalle a tu evento puntual.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-name">Fórmula Básica</div>
+          <p class="plan-desc">Ideal para juntadas y cumpleaños íntimos, hasta 50 personas.</p>
+          <ul class="plan-features">
+            <li>Carta de 4 tragos</li>
+            <li>Un bartender a cargo del evento</li>
+            <li>Insumos y vasos incluidos</li>
+          </ul>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-basica">
+            <span>Ver carta de tragos</span>
+            <svg class="menu-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="plan-menu" id="menu-basica">
+            <div class="plan-menu-inner">
+              <span class="plan-menu-label">Marcas nacionales</span>
+              <ul class="drink-list">
+                <li><span class="drink-name">Fernet Cola</span><span class="drink-note">Branca y Coca-Cola</span></li>
+                <li><span class="drink-name">Gin Tonic</span><span class="drink-note">Gordon's</span></li>
+                <li><span class="drink-name">Vodka</span><span class="drink-note">Smirnoff con naranja o energizantes</span></li>
+                <li><span class="drink-name">Campari</span><span class="drink-note">Con naranja o tónica</span></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contacto" class="btn btn-ghost">Consultar</a>
+        </div>
+        <div class="plan featured">
+          <span class="plan-tag">Recomendada</span>
+          <div class="plan-name">Fórmula Premium</div>
+          <p class="plan-desc">Pensada para casamientos y eventos medianos, de 50 a 100 personas.</p>
+          <ul class="plan-features">
+            <li>Todo el servicio de la Fórmula Básica</li>
+            <li>Carta ampliada a 8 tragos, con el Fernet incluido</li>
+            <li>Opción sin alcohol</li>
+            <li>Un bartender y ayudante de barra</li>
+            <li>Cristalería premium incluida</li>
+            <li>Mejor selección de marcas</li>
+          </ul>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-premium">
+            <span>Ver carta de tragos</span>
+            <svg class="menu-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="plan-menu" id="menu-premium">
+            <div class="plan-menu-inner">
+              <span class="plan-menu-label">Nacionales e importadas</span>
+              <ul class="drink-list">
+                <li><span class="drink-name">Fernet Cola</span><span class="drink-note">Branca y Coca-Cola</span></li>
+                <li><span class="drink-name">Aperol Spritz</span></li>
+                <li><span class="drink-name">Mojito</span><span class="drink-note">Bacardi</span></li>
+                <li><span class="drink-name">Whisky Sour</span><span class="drink-note">Jack Daniel's / Johnnie Walker Red</span></li>
+                <li><span class="drink-name">Gin Tonic premium</span><span class="drink-note">Bombay Sapphire / Beefeater</span></li>
+                <li><span class="drink-name">Vodka Martini</span><span class="drink-note">Absolut</span></li>
+                <li><span class="drink-name">Daiquiri frozen</span><span class="drink-note">Frutas a elección</span></li>
+                <li><span class="drink-name">Mocktail a elección</span><span class="drink-note">Sin alcohol</span></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contacto" class="btn btn-primary">Consultar</a>
+        </div>
+        <div class="plan">
+          <div class="plan-name">Fórmula VIP</div>
+          <p class="plan-desc">Para grandes eventos o reuniones corporativas, más de 100 personas.</p>
+          <ul class="plan-features">
+            <li>Todo lo de la Fórmula Premium</li>
+            <li>Carta a medida con tragos de autor exclusivos</li>
+            <li>Equipo de barra escalado al evento</li>
+            <li>Dos bartenders y un ayudante de barra</li>
+          </ul>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-vip">
+            <span>Ver carta de tragos</span>
+            <svg class="menu-chevron" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="plan-menu" id="menu-vip">
+            <div class="plan-menu-inner">
+              <span class="plan-menu-label">Top shelf</span>
+              <ul class="drink-list">
+                <li><span class="drink-name">Old Fashioned</span><span class="drink-note">Macallan / Buchanan's</span></li>
+                <li><span class="drink-name">Espresso Martini</span><span class="drink-note">Grey Goose</span></li>
+                <li><span class="drink-name">Margarita</span><span class="drink-note">Don Julio</span></li>
+                <li><span class="drink-name">Negroni</span><span class="drink-note">Bombay Sapphire, Campari, Martini Rosso</span></li>
+                <li><span class="drink-name">Copas de bienvenida</span><span class="drink-note">Moët &amp; Chandon</span></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contacto" class="btn btn-ghost">Consultar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  GALERÍA: descomentá este bloque cuando tengas fotos reales (barra armada, tragos, eventos).
+  Poné las imágenes en una carpeta "fotos/" y completá el alt de cada una.
+
+  <section id="galeria">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Nuestros eventos</span>
+        <h2>Así se ve una noche Andromeda</h2>
+      </div>
+      <div class="gallery">
+        <img src="fotos/evento-1.jpg" alt="Descripción de la foto" loading="lazy" width="800" height="600">
+        <img src="fotos/evento-2.jpg" alt="Descripción de la foto" loading="lazy" width="800" height="600">
+        <img src="fotos/evento-3.jpg" alt="Descripción de la foto" loading="lazy" width="800" height="600">
+        <img src="fotos/evento-4.jpg" alt="Descripción de la foto" loading="lazy" width="800" height="600">
+      </div>
+    </div>
+  </section>
+-->
+
+  <section id="proceso">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2>De la idea al brindis, en tres simples pasos</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Contanos tu evento</h3>
+          <p>Fecha, cantidad de invitados y el estilo que buscás.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Elegí tu fórmula</h3>
+          <p>Ajustamos la carta, la ambientación y el equipo de barra a tu presupuesto y tu evento.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Brindamos juntos</h3>
+          <p>Montamos la barra y preparamos todo para que tu única preocupación sea disfrutar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="final-cta alt">
+    <div class="wrap">
+      <h2>Para que la fiesta la disfrutes vos también.</h2>
+      <p>Contanos la fecha y el estilo de tu evento y te armamos una propuesta a medida lo antes posible.</p>
+      <div class="cta-row">
+        <a href="https://wa.me/5491149477907?text=Hola%21%20Quiero%20cotizar%20un%20evento.%20Fecha%3A%20/%20Cantidad%20de%20invitados%3A%20/%20Tipo%20de%20evento%3A%20/%20Lugar%3A" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Escribinos por WhatsApp</a>
+        <a href="https://www.instagram.com/andromeda.drinkslab/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver nuestro Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand">
+        <img src="andromeda-icono-color.svg" alt="" width="28" height="28">
+        <div class="brand-word">ANDROMEDA<span>DRINKS LAB</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="#proposito">Nosotros</a>
+        <a href="#planes">Fórmulas</a>
+        <a href="#proceso">Cotizar un evento</a>
+        <a href="https://www.instagram.com/andromeda.drinkslab/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <p class="fine-print">Andromeda Drinks Lab &middot; Barra de eventos &middot; Galaxia M31 &middot; Todos los derechos reservados ©</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
